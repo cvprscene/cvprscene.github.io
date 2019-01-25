@@ -1,1 +1,1 @@
-# cvprscene
+# workshop
