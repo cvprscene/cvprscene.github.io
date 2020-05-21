@@ -93,7 +93,6 @@ header {
   padding: 0;
 }
 header ul {
-  white-space:nowrap;
   list-style: none;
   margin: 0;
   padding: 0px 0px 10px 0px;
