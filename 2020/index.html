@@ -1,3 +1,258 @@
-<head>
-  <meta http-equiv='refresh' content='0; URL=../index.html'>
-</head>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>3D Scene Understanding at CVPR 2020</title>
+    
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+    <script async src="js/scale.fix.js"></script>
+
+    <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+      .en-markup-crop-options {
+        top: 18px !important;
+        left: 50% !important;
+        margin-left: -100px !important;
+        width: 200px !important;
+        border: 2px rgba(255,255,255,.38) solid !important;
+        border-radius: 4px !important;
+      }
+
+      .en-markup-crop-options div div:first-of-type {
+        margin-left: 0px !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+      <a href="http://cvpr2020.thecvf.com/"><img class="logo" src="img/CVPR_Logo_2020.jpg" width="220px" align="bottom"></a>
+
+      <h2>3D Scene Understanding for Vision, Graphics, and Robotics</h2>
+      <h3 style="text-decoration: line-through;">CVPR 2020 Workshop, Virtual, June 15th, 2020 </h3>
+      <h3>Watch the recorded video workshop from <a href="https://www.youtube.com/watch?v=49Te04w1ZSg" style="color:red; font-weight:700">Youtube</a> </h3>
+
+      <ul>
+        <li class="active">
+        <a href="index.html" title="">Introduction</a>
+        </li>
+        <li>
+        <a href="talks.html" title="">Talks</a>
+        </li>
+        <li>
+          <a href="schedule.html" title="">Schedule</a>
+        </li>
+        <li>
+          <a href="2019/index.html" title="">Previous Workshop</a>
+        </li>
+      </ul>
+
+      <hr>
+      </header>
+
+      <section>
+        <h2> News</h2>
+        <p>Due to the pandemic, our workshop will be virtual this year. We will host an online chat room for communication with the speakers and Q&A. Looking forward to meet you online!</b>.</p>
+        <p><strong>Invited talks and oral presentations will be presented live or by recorded videos in the same Zoom room, all of the talks will have live Q&A session, please refer to the <a href="talks.html">Talks</a> for recorded videos and more details. </strong></p> 
+        <p><strong>All the events are hosted in the  <a href="https://zoom.us/j/99893373100?pwd=TXN1bWFlRnNnUmVZazZCRWljWTF0QT09">Zoom</a>, click the raise hand button if you have questions during the talk. The speaker would either pause to answer your questions or leave them to the Q&A part.</strong></p>
+      </section>
+
+      <speaker>
+        <h2>Invited Speakers</h2>
+  
+        <table>
+          <tbody>
+            <tr>
+              <td width="25%"><a href="http://www.cs.utexas.edu/users/grauman/"><img src="img/grauman_kristen.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td width="25%"><a href="https://people.eecs.berkeley.edu/~svlevine/"><img src="img/levine.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td width="25%"><a href="https://avg.is.tuebingen.mpg.de/person/ageiger/"><img src="img/andreas_geiger.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+            </tr>
+            <tr>
+              <td><a href="http://www.cs.utexas.edu/users/grauman/">Kristen Grauman (UT Austin)</a></td>
+              <td><a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine (UC Berkeley)</a></td>              
+              <td><a href="https://avg.is.tuebingen.mpg.de/person/ageiger">Andreas Geiger (University of Tübingen)</a></td>
+            </tr>
+            <tr>
+              <td width="25%"><a href="https://www.cs.sfu.ca/~furukawa/"><img src="img/furukawa.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td width="25%"><a href="https://dritchie.github.io/"><img src=" img/daniel.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td width="25%"><a href="https://web.stanford.edu/~bohg/"><img src="img/jeannette.png" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.cs.sfu.ca/~furukawa/">Yasutaka Furukawa (Simon Fraser University)</a></td>
+              <td><a href="https://dritchie.github.io/">Daniel Ritchie (Brown University)</a></td>           
+              <td><a href="https://web.stanford.edu/~bohg/">Jeannette Bohg (Stanford University)</a></td>
+            </tr>
+            <tr>
+              <td width="25%"><a href="http://gfx.uvic.ca/people/ataiya/"><img src="img/song.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td width="25%"><a href="http://gfx.uvic.ca/people/ataiya/"><img src="img/andrea.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td width="25%"><a href="https://www.cs.cmu.edu/~katef/"><img src="img/katerina.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+            </tr>
+            <tr>
+              <td><a href="https://shurans.github.io/index.html">Shuran Song (Columbia University)</a></td>
+              <td><a href="http://gfx.uvic.ca/people/ataiya/">Andrea Tagliasacchi (Google Brain)</a></td>
+              <td><a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki (Carnegie Mellon University)</a></td>
+
+            </tr>
+          </tbody>
+        </table>
+        </speaker>
+
+        <speaker>
+        <h2>Opening Remark</h2>
+  
+        <table>
+          <tbody>
+            <tr>
+              <td width="25%"><a href="http://luthuli.cs.uiuc.edu/~daf/"><img src="img/forsyth.png" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+            </tr>
+            <tr>
+              <td><a href="http://luthuli.cs.uiuc.edu/~daf/">David Forsyth (University of Illinois Urbana-Champaign)</a></td>
+
+            </tr>
+          </tbody>
+        </table>
+        </speaker>
+
+      <section>
+      <h2> Schedule </h2>
+      <ul>
+          <li> 9:00 am - 9:15 am: Opening Remark: <strong> David Forsyth - 3D Vision: Subjunctives </strong>
+          <li> 9:15am - 9:45am:	Invited talk: <strong>Andreas Geiger - Learning 3D Reconstruction in Function Space </strong>
+          <li> 9:45am - 10:15am:	Invited talk: <strong>Jeannette Bohg - The Importance of Depth Data for Decision-making in Robot Manipulation</strong>
+          <li> 10:15am - 10:45am:	Oral Presentation 1
+          <li> 10:45am - 11:15am:	Invited talk: <strong>Shuran Song - Learning Visual Representations for Generalizable Manipulation</strong>
+          <li> 11:15am - 11:45am:	Invited talk: <strong>Yasutaka Furukawa - CVPR is a Contemporary Art Exhibition</strong>
+          <li> 11:45am - 12:15pm:	Oral Presentation 2
+          <li> 12:15pm - 2:00pm:	Lunch Break
+          <li> 2:00pm - 2:30pm:	Invited talk: <strong>Andrea Tagliasacchi - Structured Representations for 3D Computer Vision </strong>
+          <li> 2:30pm - 3:00pm:	Invited talk: <strong>Katerina Fragkiadaki - 3-Dimensional Neural Scene Representations for Perception and Control</strong>
+          <li> 3:00pm - 3:30pm:	Oral Presentation 3
+          <li> 3:30pm - 4:00pm:	Invited talk: <strong>Sergey Levine - Embodied Implicit Scene Understanding</strong>
+          <li> 4:00pm - 4:30pm:	Invited talk: <strong>Kristen Grauman - People Watching for Agent Learning</strong>
+          <li> 4:30pm - 5:00pm: Invited talk: <strong>Daniel Ritchie - Toward Synthesizing Training Data for 3D Scene Understanding</strong>
+              
+        </ul>
+      </section>
+      <br>
+      
+      <section>
+          <h2> Oral Presentation </h2>
+          <ul>
+          <li> SAPIEN: A SimulAted Part-based Interactive ENvironment
+          <li> SuperGlue:Learning Feature Matching with Graph Neural Networks
+          <li> Novel View Synthesis of Dynamic Scenes with Globally Coherent Depths from a Monocular Camera
+          <li> Video Inference for Human Body Pose and Shape Estimation
+          <li> Deep Visual Reasoning: Learning to Predict Action Sequences for Task and Motion Planning from an Initial Scene Image
+          <li> 3D Dynamic Scene Graphs Actionable Spatial Perception with Places, Objects, and Humans</li>
+          <li>Interactive Gibson Environment:a Simulator for Embodied Visual Agents</li>
+          <li> Neural Topological SLAM for Visual Navigation</li>
+          <li> Local Deep Implicit Functions for 3D Shapes</li>
+          </ul>
+
+      <section>
+      <h2>Overview</h2>
+
+      <p>The goal of this workshop is to foster interdisciplinary communication of researchers working on 3D scene understanding (computer vision, computer graphics, and robotics) so that more attention of the broader community can be drawn to this field. Through this workshop, current progress and future directions will be discussed, and new ideas and discoveries in related fields are expected to emerge.</p>
+      
+      <p>Specifically, we are interested in the following problems:</p>
+      
+      <ul>
+
+        <li>Datasets: What is a desired yet manageable breadth for a dataset to serve various tasks at the same time and provide ample opportunities to combine problems? </li>
+      
+        <li>Representations: What are representations most suitable for a particular task like reconstruction, physical reasoning, etc.? Can a single representation serve all purposes of 3D scene understanding?
+          </li>
+
+        <li>Reconstruction: How to build efficient models which parse and reconstruct the observation from different data modalities (RGB, RGBD, Physical Sensor)?</li>
+
+        <li>Reasoning: How to formulate reasoning about affordances and physical properties? How to encode, represent and learn common sense?
+          </li>
+
+        <li>Interaction: How to model and learn the physical interaction with objects within the scene?
+          </li>
+        
+        <li> Bridge of the three fields: How to facilitate research to connect among vision, graphics, and robotics via 3D scene understanding? 
+        </li>
+      </ul>
+       </section>
+
+      <br>
+      
+
+      <speaker>
+        <h2>Organizers</h2>
+  
+        <table>
+          <tbody>
+            <tr>
+              <td width="25%"><a href="https://siyuanhuang.com"><img src="img/huang.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td width="25%"><a href="https://zouchuhang.github.io/"><img src="img/zou.png" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td width="25%"><a href="http://cseweb.ucsd.edu/~haosu/"><img src="img/su.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td width="25%"><a href="http://aschwing.web.engr.illinois.edu/"><img src="img/aschwing.png" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+            </tr>
+            <tr>
+              <td><a href="https://siyuanhuang.com">Siyuan Huang* (UCLA)</a></td>
+              <td><a href="https://zouchuhang.github.io/">Chuhang Zou* (UIUC)</a></td>
+              <td><a href="http://cseweb.ucsd.edu/~haosu/">Hao Su (UCSD)</a></td>
+              <td><a href="http://aschwing.web.engr.illinois.edu/">Alexander Schwing (UIUC)</a></td>
+            </tr>
+            <tr>
+              <td width="25%"><a href="https://shurans.github.io/index.html"><img src="img/song.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td width="25%"><a href="https://jiajunwu.com/"><img src="img/Jiajun_Wu.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td width="25%"><a href="http://web.cs.ucla.edu/~syqi/"><img src="img/qi.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td width="25%"><a href="https://www.yzhu.io/"><img src="img/yzhu.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+            </tr>
+            <tr>
+              <td><a href="https://shurans.github.io/index.html">Shuran Song (Columbia)</a></td>
+              <td><a href="https://jiajunwu.com/">Jiajun Wu (Stanford)</a></td>
+              <td><a href="http://web.cs.ucla.edu/~syqi/">Siyuan Qi (UCLA)</a></td>
+              <td><a href="https://www.yzhu.io/">Yixin Zhu (UCLA)</a></td>
+            </tr>
+          </tbody>
+        </table>
+        </speaker>
+
+      <br>
+
+      <speaker>
+        <h2>Senior Organizers</h2>
+  
+        <table>
+          <tbody>
+            <tr>
+              <td width="25%"><a href="http://luthuli.cs.uiuc.edu/~daf/"><img src="img/forsyth.png" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td width="25%"><a href="http://dhoiem.cs.illinois.edu/"><img src="img/derek.png" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td width="25%"><a href="https://geometry.stanford.edu/member/guibas/"><img src="img/guibas.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td width="25%"><a href="http://www.stat.ucla.edu/~sczhu/"><img src="img/songchun.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+            </tr>
+            <tr>
+              <td><a href="http://luthuli.cs.uiuc.edu/~daf/">David Forsyth (UIUC)</a></td>
+              <td><a href="http://dhoiem.cs.illinois.edu/">Derek Hoiem (UIUC)</a></td>
+              <td><a href="https://geometry.stanford.edu/member/guibas/">Leonidas Guibas (Stanford)</a></td>
+              <td><a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu (UCLA)</a></td>
+            </tr>
+          </tbody>
+        </table>
+        </speaker>
+      
+        <br>
+        <br>
+
+      <section>
+          <h2>Sponsor</h2>
+          <p style="text-align:center;"><a href="https://www.apple.com/jobs/us/teams/machine-learning-and-ai.html"><img class="center" src="img/apple.jpg"></a></p>
+      </section>
+      
+      <footer>
+      <hr>
+      <p class="credit">Website design adapted from <a href="https://www.visionmeetscognition.org/index.html">FPIC Workshop</a>.</p>
+      </footer>
+  </body>
+</html>
