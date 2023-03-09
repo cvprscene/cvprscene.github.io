@@ -3,14 +3,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="chrome=1">
         <title>3D Scene Understanding at CVPR 2021</title>
-        
+
         <link rel="stylesheet" href="css/font.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/pygment_trac.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        
+
         <script async src="js/scale.fix.js"></script>
-    
+
         <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
           .en-markup-crop-options {
             top: 18px !important;
@@ -20,42 +20,39 @@
             border: 2px rgba(255,255,255,.38) solid !important;
             border-radius: 4px !important;
           }
-    
+
           .en-markup-crop-options div div:first-of-type {
             margin-left: 0px !important;
           }
         </style>
       </head>
-    
+
       <body>
             <div class="wrapper">
               <header>
-      <a href="http://cvpr2021.thecvf.com/"><img class="logo" src="img/cvprlogo_2021.jpeg" width="250px" height="110px" align="bottom"></a>
-        
+      <a href="http://cvpr2023.thecvf.com/"><img class="logo" src="img/cvpr_banner.svg" width="250px" height="110px" align="bottom"></a>
+
       <h2>3D Scene Understanding for Vision, Graphics, and Robotics</h2>
       <h3 style="text-decoration;">CVPR 2023 Workshop, Vancouver, June 18th, 2023 </h3>
       <!-- <h3>Watch the recorded video workshop from <a href="https://www.youtube.com/playlist?list=PL6QXpwvKhQIrSklNsQJqicjtxiOs6_NpY" style="color:red; font-weight:700">Youtube</a> </h3> -->
 
       <ul>
-        <li>
-        <a href="index.html" title="">Introduction</a>
-        </li>
         <li class="active">
-        <a href="talks.html" title="">Talks</a>
+          <a href="index.html" title="">Introduction</a>
         </li>
         <li>
-          <a href="2019/index.html" title=""> 2019</a>
+          <a href="talks.html" title="">Talks</a>
         </li>
         <li>
-          <a href="2020/index.html" title=""> 2020</a>
+          <a href="challenge.html" title="">🔥Challenge🔥</a>
         </li>
         <li>
-          <a href="2021/index.html" title=""> 2021</a>
+          <a href="past.html" title="">Past workshops</a>
         </li>
       </ul>
           <hr>
           </header>
-    
+
 
           <section>
       <ul>
@@ -67,15 +64,15 @@
           <li> <strong> Saurabh Gupta - Learning to Move and Moving to Learn</strong>
             <p> <strong>Abstract</strong>: This talk will view scene understanding from the perspective of agents actively interacting with the world around them. We will focus on navigation agents, and discuss: a) how can we efficiently learn policies for navigation, and b) how can navigating agents improve their understanding of the world through self-supervised interaction.. </p>
           <li> <strong> Qixing Huang - Extreme Relative Pose Estimation via Scene Completion</strong>
-            <p> <strong>Abstract</strong>: Estimating the relative rigid pose between two RGB-D scans of the same underlying environment is a fundamental problem in computer vision, robotics, and computer graphics. 
-Most existing approaches allow only limited relative pose changes since they require considerable overlap between the input scans. 
-This talk discusses techniques extending the scope to extreme relative poses, with little or no overlap between the input scans. 
-The key idea is to infer complete scene information about the underlying environment and match the completed scans. We discuss suitable representations for scene completion and how to integrate relative pose estimation and scene completion. Experimental results on benchmark datasets show that our approach leads to considerable improvements over state-of-the-art methods for relative pose estimation. 
+            <p> <strong>Abstract</strong>: Estimating the relative rigid pose between two RGB-D scans of the same underlying environment is a fundamental problem in computer vision, robotics, and computer graphics.
+Most existing approaches allow only limited relative pose changes since they require considerable overlap between the input scans.
+This talk discusses techniques extending the scope to extreme relative poses, with little or no overlap between the input scans.
+The key idea is to infer complete scene information about the underlying environment and match the completed scans. We discuss suitable representations for scene completion and how to integrate relative pose estimation and scene completion. Experimental results on benchmark datasets show that our approach leads to considerable improvements over state-of-the-art methods for relative pose estimation.
 In particular, our approach provides encouraging relative pose estimates even between non-overlapping scans. </p>
           <li><strong> Angjoo Kanazawa - Perceiving 3D Human Interactions in the Wild </strong>
             <p> <strong>Abstract</strong>: We live in a 3D world that is dynamic and full of life, with inhabitants like people and animals who interact with their environment by moving their bodies. While there has been rapid progress in perceiving 3D humans from images and videos, much of the work focuses on 3D human perception alone, independent from its environment including other objects that people interact with. This is particularly so on images captured in uncontrolled, "in-the-wild" settings where there are no ground truth 3D labels. In this talk I will discuss our recent direction in recovering humans that interact in two settings: 1) perceiving hands and objects 2) perceiving humans in movies, a rich data source for human interaction depicted over a large temporal context.  </p>
           <li> <strong> Tony Tung - The Next-Gen Virtual Humans</strong>
-            <p> <strong>Abstract</strong>: 
+            <p> <strong>Abstract</strong>:
 The creation of technologies for telepresence applications as a new means of communication that brings people closer together has become a necessity, especially when stay-at-home orders and remote work have become part of daily life. The development of virtual humans with AR/VR technologies to enable authentic and believable interactions between distant people is therefore of particular importance. In this talk I will give an overview of our mission, and review some of our recent work related to the creation the next-gen virtual humans that are based on a full understanding of the human body and its environment.  </p>
           <li> <strong> Yi Ma - Learning to Detect Geometric Structures from Images for 3D Parsing</strong>
             <p> <strong>Abstract</strong>: Recovering 3D geometries of scenes from 2D images is one of the most fundamental and challenging problems in computer vision. On one hand, traditional geometry-based algorithms such as SfM and SLAM are fragile in certain environments, and the resulting noisy point-clouds are hard to process and interpret. On the other hand, recent learning-based 3D understanding neural networks parse scenes by extrapolating patterns seen in the training data, which often have limited generalizability and accuracy. In this talk, I will try to address these shortcomings and combine the advantages of geometric-based and data-driven approaches into an integrated framework. More specifically, we apply learning-based methods to extract high-level geometric structures from images and use them for 3D parsing. To this end, we design specialized neural networks that understand geometric structures such as lines, junctions, planes, vanishing points, and symmetry, and detect them from images accurately; we also create large-scale 3D datasets with structural annotations to support data-driven approaches; and demonstrate how to use these high-level abstractions to parse and reconstruct scenes. By combining the power of data-driven approaches and geometric principles, future 3D systems are becoming more accurate, reliable, and easier to implement, resulting in clean, compact, and interpretable scene representations. </p>
@@ -83,12 +80,11 @@ The creation of technologies for telepresence applications as a new means of com
             <p> <strong>Abstract</strong>: In this talk, we discuss recent progress on implicitly defined neural-network-parameterized signal representation, processing, and rendering techniques. Such representation networks model 3D scenes in a continuous and differentiable manner, for example using signed distance functions or neural volumes. Differentiable renderers, including sphere tracing and neural volume rendering (i.e., NeRF), allow for these representations to be learned from partial 2D observations. In this context we will discuss recent advances in efficient representation network architectures, rendering algorithms, generalization strategies, and generative adversarial approaches for applications ranging from novel view synthesis to unconditional 3D scene generation. </p>
           <li><strong> Dhruv Batra - Training Home Assistants to Rearrange their Habitat</strong>
                         <p> <strong>Abstract</strong>: Imagine walking up to a home robot and asking “Hey robot – can you go check if my laptop is on my desk? And if so, bring it to me”. Developing such intelligent systems is a goal of deep scientific and societal value. Training and testing such agents directly in physical environments is slow, expensive, and difficult to reproduce. I will present the next generation of our simulation platform (Habitat) for training virtual robots in interactive environments and complex physics-enabled scenarios. </p> -->
-              
+
         </ul>
 
-       
+
 
         </div>
       </body>
     </html>
-    

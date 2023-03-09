@@ -6,12 +6,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>3D Scene Understanding at CVPR 2023</title>
-    
+
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    
+
     <script async src="js/scale.fix.js"></script>
 
     <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
@@ -37,23 +37,19 @@
 
       <h2>3D Scene Understanding for Vision, Graphics, and Robotics</h2>
       <h3 style="text-decoration;">CVPR 2023 Workshop, Vancouver, June 18th, 2023 </h3>
-      <!-- <h3>Watch the recorded video workshop from <a href="https://www.youtube.com/playlist?list=PL6QXpwvKhQIrSklNsQJqicjtxiOs6_NpY" style="color:red; font-weight:700">Youtube</a> </h3> -->
 
       <ul>
         <li class="active">
-        <a href="index.html" title="">Introduction</a>
+          <a href="index.html" title="">Introduction</a>
         </li>
         <li>
-        <a href="talks.html" title="">Talks</a>
+          <a href="talks.html" title="">Talks</a>
         </li>
         <li>
-          <a href="2019/index.html" title=""> 2019</a>
+          <a href="challenge.html" title="">🔥Challenge🔥</a>
         </li>
         <li>
-          <a href="2020/index.html" title=""> 2020</a>
-        </li>
-        <li>
-          <a href="2021/index.html" title=""> 2021</a>
+          <a href="past.html" title="">Past workshops</a>
         </li>
       </ul>
 
@@ -63,13 +59,13 @@
       <!-- <section>
         <h2> News</h2>
         <p>Due to the pandemic, our workshop will be virtual this year. We will host an online chat room for communication with the speakers and Q&A. Looking forward to meet you online!</b>.</p>
-        <p><strong>Invited talks and oral presentations will be presented live or by recorded videos in the same Zoom room, all of the talks will have live Q&A session, please refer to the <a href="talks.html">Talks</a> for recorded videos and more details. </strong></p> 
+        <p><strong>Invited talks and oral presentations will be presented live or by recorded videos in the same Zoom room, all of the talks will have live Q&A session, please refer to the <a href="talks.html">Talks</a> for recorded videos and more details. </strong></p>
         <p><strong>All the events are hosted in the  <a href="https://zoom.us/j/97553513295?pwd=WnBsUWV1RzVDWWFjS2hmQ2VINEJpdz09">Zoom</a>, click the raise hand button if you have questions during the talk. The speaker would either pause to answer your questions or leave them to the Q&A part.</strong></p>
       </section> -->
 
       <speaker>
         <h2>Confirmed Speakers</h2>
-  
+
         <table>
           <tbody>
             <tr>
@@ -79,7 +75,7 @@
             </tr>
             <tr>
               <td style="text-align: center;"><a href="https://shenlong.web.illinois.edu/">Shenlong Wang (UIUC)</a></td>
-              <td style="text-align: center;"><a href="https://gkioxari.github.io/">Georgia Gkioxari (Caltech)</a></td>              
+              <td style="text-align: center;"><a href="https://gkioxari.github.io/">Georgia Gkioxari (Caltech)</a></td>
               <td style="text-align: center;"><a href="https://andyzeng.github.io/">Andy Zeng (Google)</a></td>
             </tr>
             <tr>
@@ -89,7 +85,7 @@
             </tr>
             <tr>
               <td style="text-align: center;"><a href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak (CMU)</a></td>
-              <td style="text-align: center;"><a href="https://xiaolonw.github.io/">Xiaolong Wang (UCSD)</a></td>           
+              <td style="text-align: center;"><a href="https://xiaolonw.github.io/">Xiaolong Wang (UCSD)</a></td>
               <td style="text-align: center;"><a href="https://www.vincentsitzmann.com/">Vincent Sitzmann (MIT)</a></td>
             </tr>
             <!-- <tr>
@@ -114,17 +110,17 @@
           <li> 12:30 pm - 13:00 pm: Invited talk: <strong> Roozbehm Mottaghi - Scene Understanding for Embodied Tasks </strong>
           <li> 13:00 pm - 13:30 pm: Invited talk: <strong> Saurabh Gupta - Learning to Move and Moving to Learn
  </strong>
-          <li> 13:30 pm - 14:00 pm: Invited talk: <strong> Qixing Huang - Extreme Relative Pose Estimation via Scene Completion</strong>: 
+          <li> 13:30 pm - 14:00 pm: Invited talk: <strong> Qixing Huang - Extreme Relative Pose Estimation via Scene Completion</strong>:
           <li> 14:00 pm - 14:30 pm: Invited talk: <strong> Angjoo Kanazawa - Perceiving 3D Human Interactions in the Wild </strong>
           <li> 14:30 pm - 15:00 pm: Invited talk: <strong> Tony Tung - The Next-Gen Virtual Humans </strong>
           <li> 15:00 pm - 15:30 pm: Invited talk: <strong> Yi Ma-Learning to Detect Geometric Structures from Images for 3D Parsing</strong>
           <li> 15:30 pm - 16:00 pm: Invited talk: <strong> Gordon Wetzstein - Neural Scene Representation and Rendering </strong>
           <li> 16:00 pm - 16:30 pm: Invited talk: <strong> Dhruv Batra - Training Home Assistants to Rearrange their Habitat </strong> -->
-              
+
         </ul>
       </section>
       <br>
-      
+
       <h2>Overview</h2>
 
       <p>Despite the rapid growth of scene understanding, existing methods have well-known limitations: (1) How to obtain detailed and fully labeled large-scale 3D data to train and evaluate models? (2) What representations to use for reasoning about support, contact, and extent? (3) How to differentiate clutter from a broad range of classes of interest? (4) How to facilitate the interaction of physical agents in the real world? (5) How to infer the functionality and affordance of 3D scenes and anticipate activities in the 3D world? (6) Witnessing the recent advances in NLP and 2D computer vision, how can we develop/utilize generalist and large models for 3D scene understanding and related applications (ex. robotic planning)? These are just some of the many questions that are unanswered to this day.</p>
@@ -132,13 +128,13 @@
       <p>The goal of this workshop is to foster interdisciplinary communication of researchers that are interested in addressing these challenges (computer vision, computer graphics, NLP, and robotics) so that more attention of the broader community can be drawn to this field. Through this workshop, current progress and future directions will be discussed, and new ideas and discoveries in related fields are expected to emerge.. </p>
 
       <!-- <p>The goal of this workshop is to foster interdisciplinary communication of researchers working on 3D scene understanding (computer vision, computer graphics, and robotics) so that more attention of the broader community can be drawn to this field. Through this workshop, current progress and future directions will be discussed, and new ideas and discoveries in related fields are expected to emerge.</p> -->
-      
+
       <p>Specifically, we are interested in the following problems:</p>
-      
+
       <ul>
 
         <li>Datasets: What is a desired yet manageable breadth for a dataset to serve various tasks at the same time and provide ample opportunities to combine problems? What level of detail is required for the annotation? What are the shortcomings of recent evaluation metrics and what are ways to fix those?</li>
-      
+
         <li>Representations: What are representations most suitable for a particular task like reconstruction, physical reasoning, etc.? Can a single representation serve all purposes of 3D scene understanding?</li>
 
         <li>Reconstruction: How to build efficient models which parse and reconstruct the observation from different data modalities (RGB, RGBD, Physical Sensor)?</li>
@@ -146,7 +142,7 @@
         <li>Reasoning: How to formulate reasoning about affordances and physical properties? How to encode, represent and learn common sense?</li>
 
         <li>Interaction: How to model and learn to interact with objects within the scene?</li>
-        
+
         <li>Generalist models: How can we develop 3D vision models with multi-task, zero-shot, and few-shot capabilities in holistic scene understanding tasks and related applications?</li>
 
         <li>Bridging fields: How to facilitate researches that connect vision, graphics, and robotics via 3D scene understanding?</li>
@@ -154,11 +150,11 @@
        </section>
 
       <br>
-      
+
 
       <speaker>
         <h2>Organizers</h2>
-  
+
         <table>
           <tbody>
             <tr>
@@ -193,7 +189,7 @@
 
       <speaker>
         <h2>Senior Organizers</h2>
-  
+
         <table>
           <tbody>
             <tr>
@@ -209,10 +205,10 @@
           </tbody>
         </table>
         </speaker>
-      
+
         <br>
         <br>
-      
+
       <footer>
       <hr>
       <p class="credit">Website design adapted from <a href="https://www.visionmeetscognition.org/index.html">FPIC Workshop</a>.</p>
