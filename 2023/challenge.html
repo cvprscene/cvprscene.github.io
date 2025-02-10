@@ -1,0 +1,105 @@
+<head>
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>3D Scene Understanding at CVPR 2021</title>
+
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/pygment_trac.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <script async src="js/scale.fix.js"></script>
+
+        <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+          .en-markup-crop-options {
+            top: 18px !important;
+            left: 50% !important;
+            margin-left: -100px !important;
+            width: 200px !important;
+            border: 2px rgba(255,255,255,.38) solid !important;
+            border-radius: 4px !important;
+          }
+
+          .en-markup-crop-options div div:first-of-type {
+            margin-left: 0px !important;
+          }
+        </style>
+      </head>
+
+      <body>
+            <div class="wrapper">
+              <header>
+      <a href="http://cvpr2023.thecvf.com/"><img class="logo" src="img/cvpr_banner.svg" width="250px" height="110px" align="bottom"></a>
+
+      <h2>3D Scene Understanding for Vision, Graphics, and Robotics</h2>
+      <h3 style="text-decoration;">CVPR 2023 Workshop, Vancouver, June 18th, 2023 </h3>
+      <!-- <h3>Watch the recorded video workshop from <a href="https://www.youtube.com/playlist?list=PL6QXpwvKhQIrSklNsQJqicjtxiOs6_NpY" style="color:red; font-weight:700">Youtube</a> </h3> -->
+
+      <ul>
+        <li class="active">
+          <a href="index.html" title="">Introduction</a>
+        </li>
+        <li>
+          <a href="talks.html" title="">Talks</a>
+        </li>
+        <li>
+          <a href="challenge.html" title="">🔥Challenge🔥</a>
+        </li>
+        <li>
+          <a href="past.html" title="">Past workshops</a>
+        </li>
+      </ul>
+          <hr>
+          </header>
+
+
+      <section>
+        <h2> Challenge </h2>
+        This year we establish a new challenge on <b>embodied scene understanding</b> featuring the recently introduced <a href="https://sqa3d.github.io">SQA3D</a> benchmark. There are two tasks in the challenge:
+        <br>
+        <br>
+        <ul>
+          <li>
+              <b>Situation understanding</b>: Given a scene and a sentence that describes the situation of an agent in that scene, locate the position and orientation of the agent. More details: <a href='https://github.com/SilongYong/SQA3D/blob/master/assets/localization.md'>introduction</a>.
+          </li>
+          <li>
+              <b>Situated reasoning</b>: Given a scene and a sentence that describe the situation of an agent in that scene, answer a question. You may use the ground truth location in this task. More details: <a href='https://github.com/SilongYong/SQA3D/blob/master/assets/dataset.md'>introduction</a>.
+          </li>
+        </ul>
+        <div class="row" id="tasks">
+          <img src="img/sqa3d_task.png" height="300px">
+        </div>
+
+        For more information on SQA3D, please check out the <a href="http://web.cs.ucla.edu/~xm/file/sqa3d_iclr23_slides.pdf">overview slides</a> and the <a href="https://arxiv.org/abs/2210.07474">technical report</a>.
+        <br>
+        <br>
+        The deadline of submitting your result is <strong>June 10 2023</strong>. The winner will be announced on <strong>June 11 2023</strong>.
+        <br>
+        <br>
+        The participants are provided with training, validation and testing sets and an automatic evaluation script. A <a href="https://github.com/SilongYong/SQA3D">codebase</a> with baseline models is also available. The winner of each task will be invited to give a short talk describing their method during the workshop.
+        </section>
+        <br>
+        <section>
+          <h2> Submission guidelines </h2>
+          <ol>
+            <li>
+                Since the test set is publicly available, <b>please evaluate your model directly on it and send the result to xiaojian.ma@ucla.edu</b>. 
+            </li>
+            <li>
+              There are three different scene representations offered by SQA3D: 3D scan, egocentric video and bird-eye view picture. Please include the representation you use when submitting your result.
+            </li>
+            <li>
+              Using the ground truth location annotations is allowed in the <b>situated reasoning</b> task, but please add a note of using them when submitting your result.
+            </li>
+            <li>
+               The submitted result will be made public immediately to the  <a href='https://paperswithcode.com/dataset/sqa3d'>online leaderboard</a> hosted by paperwithcode.
+            </li>
+            <li>
+              If you have more questions, please contact <a href="mailto:xiaojian.ma@ucla.edu?subject=Question of SQA3D challenge at 3D Scene Understanding Workshop 2023">Xiaojian Ma</a>.
+            </li>
+          </ol>
+        </section>
+        </div>
+      </body>
+    </html>

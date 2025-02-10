@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>3D Scene Understanding at CVPR 2023</title>
+
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <script async src="js/scale.fix.js"></script>
+
+    <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+      .en-markup-crop-options {
+        top: 18px !important;
+        left: 50% !important;
+        margin-left: -100px !important;
+        width: 200px !important;
+        border: 2px rgba(255,255,255,.38) solid !important;
+        border-radius: 4px !important;
+      }
+
+      .en-markup-crop-options div div:first-of-type {
+        margin-left: 0px !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+      <a href="http://cvpr.thecvf.com/"><img class="logo" src="img/cvprlogo_2025.png" width="250px" height="110px" align="bottom"></a>
+
+      <h2>5th 3D Scene Understanding for Vision, Graphics, and Robotics</h2>
+      <h3 style="text-decoration;">CVPR 2025 Workshop, Nashville TN, 2025 </h3>
+      <!-- <h3 style="text-decoration;">Location: West 220 - 222 </h3> -->
+	      
+      <ul>
+        <li class="active">
+          <a href="index.html" title="">Introduction</a>
+        </li>
+        <!-- <li>
+          <a href="talks.html" title="">Talks</a>
+        </li> -->
+        <!-- <li>
+          <a href="challenge.html" title="">🔥Challenge🔥</a>
+        </li> -->
+        <li>
+          <a href="past.html" title="">Past workshops</a>
+        </li>
+      </ul>
+
+      <hr>
+      </header>
+
+      <!-- <section>
+        <h2> News</h2>
+        <p>Due to the pandemic, our workshop will be virtual this year. We will host an online chat room for communication with the speakers and Q&A. Looking forward to meet you online!</b>.</p>
+        <p><strong>Invited talks and oral presentations will be presented live or by recorded videos in the same Zoom room, all of the talks will have live Q&A session, please refer to the <a href="talks.html">Talks</a> for recorded videos and more details. </strong></p>
+        <p><strong>All the events are hosted in the  <a href="https://zoom.us/j/97553513295?pwd=WnBsUWV1RzVDWWFjS2hmQ2VINEJpdz09">Zoom</a>, click the raise hand button if you have questions during the talk. The speaker would either pause to answer your questions or leave them to the Q&A part.</strong></p>
+      </section> -->
+
+      <speaker>
+        <h2>Invited Speakers</h2>
+
+        <table>
+          <tbody>
+            <tr>
+              <td style="text-align: center;" width="25%"><a href="https://www.cs.cmu.edu/~deva/"><img src="img/DevaRamanan.jpeg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td style="text-align: center;" width="25%"><a href="https://angelxuanchang.github.io/"><img src="img/AngelChang.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td style="text-align: center;" width="25%"><a href="https://www.cs.columbia.edu/~vondrick/"><img src="img/CarlVondrick.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td style="text-align: center;" width="25%"><a href="https://www.math.ucla.edu/~cffjiang/"><img src="img/ChenfanfuJiang.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+            </tr>
+            <tr>
+              <td style="text-align: center;"><a href="https://www.cs.cmu.edu/~deva/">Deva Ramanan (CMU)</a></td>
+              <td style="text-align: center;"><a href="https://angelxuanchang.github.io/">Angel X. Chang (SFU)</a></td>
+              <td style="text-align: center;"><a href="https://www.cs.columbia.edu/~vondrick/">Carl Vondrick (Columbia)</a></td>
+              <td style="text-align: center;"><a href="https://www.math.ucla.edu/~cffjiang/">Chenfanfu Jiang (UCLA)</a></td>
+            </tr>
+            <tr>
+              <td style="text-align: center;" width="25%"><a href="https://ir0.github.io/"><img src=" img/IroArmeni.png" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td style="text-align: center;" width="25%"><a href="https://kianaehsani.com/"><img src="img/KianaEhsani.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td style="text-align: center;" width="25%"><a href="https://www.gshi.me/"><img src="img/GuanyaShi.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <!-- <td style="text-align: center;" width="25%"><a href="https://www.3dunderstanding.org/index.html"><img src="img/angela.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td> -->
+            </tr>
+            <tr>
+              <td style="text-align: center;"><a href="https://ir0.github.io/">Iro Armeni (Stanford)</a></td>
+              <td style="text-align: center;"><a href="https://kianaehsani.com/">Kiana Ehsani (Vercept)</a></td>
+              <td style="text-align: center;"><a href="https://www.gshi.me/">Guanya Shi (CMU)</a></td>
+              <!-- <td style="text-align: center;"><a href="https://www.3dunderstanding.org/index.html">Angela Dai (TUM)</a></td> -->
+            </tr>
+          </tbody>
+        </table>
+        </speaker>
+
+		<!-- <section>
+		<p><br /></p>
+		<div class="row" id="dates">
+		  <div class="col-xs-12">
+			<h2>Important Dates</h2>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-xs-12">
+			<table class="table table-striped">
+			  <tbody>
+				<tr>
+				  <td><a href='challenge.html'>SQA3D Challenge</a> Submission Deadline</td>
+				  <td>June 10 2023</td>
+				</tr>
+				<tr>
+				  <td>Notification to SQA3D Challenge Winner</td>
+				  <td>June 11 2023</td>
+				</tr>
+				<tr>
+				  <td>Workshop Date</td>
+				  <td>June 18 2023 (<span style="background-color:lightcoral;">Day 1 of CVPR 2023</span>)</td>
+				</tr>
+			  </tbody>
+			</table>
+		  </div>
+		</div>
+		</section> -->
+
+      <section>
+      <h2> Schedule (Pacific Time) </h2>
+      <ul>
+        TBD
+          <!-- <li> <strong>TBD</strong> </li> -->
+          <!-- <li> 12:00 pm - 12:30 pm: Invited talk: <strong> Andrea Vedaldi - Learning 3D objects in the real world </strong>
+          <li> 12:30 pm - 13:00 pm: Invited talk: <strong> Roozbehm Mottaghi - Scene Understanding for Embodied Tasks </strong>
+          <li> 13:00 pm - 13:30 pm: Invited talk: <strong> Saurabh Gupta - Learning to Move and Moving to Learn
+ </strong>
+          <li> 13:30 pm - 14:00 pm: Invited talk: <strong> Qixing Huang - Extreme Relative Pose Estimation via Scene Completion</strong>:
+          <li> 14:00 pm - 14:30 pm: Invited talk: <strong> Angjoo Kanazawa - Perceiving 3D Human Interactions in the Wild </strong>
+          <li> 14:30 pm - 15:00 pm: Invited talk: <strong> Tony Tung - The Next-Gen Virtual Humans </strong>
+          <li> 15:00 pm - 15:30 pm: Invited talk: <strong> Yi Ma-Learning to Detect Geometric Structures from Images for 3D Parsing</strong>
+          <li> 15:30 pm - 16:00 pm: Invited talk: <strong> Gordon Wetzstein - Neural Scene Representation and Rendering </strong>
+          <li> 16:00 pm - 16:30 pm: Invited talk: <strong> Dhruv Batra - Training Home Assistants to Rearrange their Habitat </strong> -->
+
+          <!-- <li> 09:00 am - 09:15 am: Opening Remark: <strong> Hao Su </strong> </li>
+          <li> 09:15 am - 09:45 am: Invited talk: <strong> Xiaolong Wang </strong> </li>
+          <li> 09:45 am - 10:15 am: Invited talk: <strong> Georgia Gkioxari </strong> </li>
+          <li> 10:15 am - 10:45 am: Oral Presentation 1 </li>
+          <li> 10:45 am - 11:15 am: Invited Talk: <strong> Siyu Tang </strong> </li>
+          <li> 11:15 am - 11:45 am: Invited Talk: <strong> Shenlong Wang </strong> </li>
+          <li> 11:45 am - 12:15 pm: Oral Presentation 2 </li>
+          <li> 12:15 pm - 01:45 pm: Lunch Break </li>
+          <li> 01:45 pm - 02:00 pm: Announcement of Challenge Winner and Spotlight Talk </li>
+          <li> 02:00 pm - 02:30 pm: Invited Talk: <strong> Vincent Sitzmann </strong> </li>
+          <li> 02:30 pm - 03:00 pm: Invited Talk: <strong> Deepak Pathak </strong> </li>
+          <li> 03:00 pm - 03:30 pm: Oral Presentation 3 </li>
+          <li> 03:30 pm - 04:00 pm: Invited Talk: <strong> Andy Zeng </strong> </li>
+          <li> 04:00 pm - 04:30 pm: Invited Talk: <strong> Angela Dai </strong> </li>
+          <li> 04:30 pm - 05:00 pm: Oral Presentation 4 </li> -->
+        </ul>
+      </section>
+      <br>
+
+      <!-- <h2>Oral Presentation</h2>
+      <strong> 10:15 am - 10:45 am: Oral Presentation 1 </strong>
+      <ul>
+        <li> <strong>Yufei Ye</strong> <em>Affordance Diffusion: Synthesizing Hand-Object Interactions</em> </li>
+        <li> <strong>Krishna Kumar Singh</strong> <em>Putting People in Their Place: Affordance-Aware Human Insertion into Scenes</em> </li>
+        <li> <strong>Le Xue</strong> <em>ULIP: Learning a Unified Representation of Language, Images, and Point Clouds for 3D Understanding </em></li>
+      </ul>
+      <strong> 11:45 am - 12:15 pm: Oral Presentation 2 </strong>
+      <ul>
+        <li> <strong>Georgia Gkioxari</strong> <em>Multiview Compressive Coding for 3D Reconstruction </em></li>
+        <li> <strong>Zian Wang</strong> <em>Neural Fields meet Explicit Geometric Representations for Inverse Rendering of Urban Scenes </em></li>
+        <li> <strong>Samir Yitzhak Gadre</strong> <em>CoWs on Pasture: Baselines and Benchmarks for Language-Driven Zero-Shot Object Navigation </em></li>
+      </ul>
+      <strong> 03:00 pm - 03:30 pm: Oral Presentation 3 </strong>
+      <ul>
+        <li> <strong>Yawar Siddiqui</strong> <em>Panoptic Lifting for 3D Scene Understanding with Neural Fields</em> </li>
+        <li> <strong>Kyle Genova</strong> <em>OpenScene: 3D Scene Understanding with Open Vocabularies </em> </li>
+        <li> <strong>Siyuan Huang</strong> <em>Diffusion-based Generation, Optimization, and Planning in 3D Scenes</em> </li>
+      </ul>
+      <strong> 04:30 pm - 05:00 pm: Oral Presentation 4 </strong>
+      <ul>
+        <li> <strong>Ji Hou</strong> <em>Mask3D: Pre-training 2D Vision Transformers by Learning Masked 3D Priors</em> </li>
+        <li> <strong>Zicong Fan</strong> <em>ARCTIC: A Dataset for Dexterous Bimanual Hand-Object Manipulation</em> </li>
+        <li> <strong>Tong Wu</strong> <em>OmniObject3D: Large Vocabulary 3D Object Dataset for Realistic Perception, Reconstruction and Generation</em> </li>
+      </ul> -->
+
+
+      <h2>Overview</h2>
+
+      <p>The developments in AI technology have spurred calls for next-generation AI, such as Embodied AI and 
+        General AI, which will enable systems to physically interact with their environments under comprehensive 
+        tasks in a human-like manner. Towards this goal, researchers from diverse fields, e.g., computer vision, 
+        computer graphics, and robotics, have made separate efforts and made progress across various topics, 
+        including 3D representation (e.g., NeRF, Gaussian Splatting), foundation models (e.g., SAM(2), Stable 
+        (Video) Diffusion), datasets (e.g., Objaverse (XL), Open X-Embodiment), end-to-end vision-language-action 
+        (VLA) models (e.g., RT-X), etc.</p> 
+        
+       <p>However, <strong>new fundamental questions arise about how to sustain a 
+        substantially more comprehensive understanding of the environment, unite these efforts, and facilitate 
+        the future development of General and Embodied AI</strong>. For example, what is the role of traditional
+        scene parsing/detection/localization in today’s development? How to effectively leverage the scene
+        understanding techniques to improve the physical interaction? Could pure end-to-end models and
+        scaling large-scale datasets work, or are intermediate representations, even symbolic ones more suitable
+        for certain tasks?</p>
+
+        <p>This year’s focus will be <strong>exploring the fundamental aspects to enhance physical interaction
+           between agents and 3D scenes</strong> in the new era of AI, promoting future directions and ideas
+            envisioned to emerge within the next two to five years.</p>
+
+      <!-- <p>Specifically, we are interested in the following problems:</p>
+
+      <ul>
+
+        <li>Datasets: What is a desired yet manageable breadth for a dataset to serve various tasks at the same time and provide ample opportunities to combine problems? What level of detail is required for the annotation? What are the shortcomings of recent evaluation metrics and what are ways to fix those?</li>
+
+        <li>Representations: What are representations most suitable for a particular task like reconstruction, physical reasoning, etc.? Can a single representation serve all purposes of 3D scene understanding?</li>
+
+        <li>Reconstruction: How to build efficient models which parse and reconstruct the observation from different data modalities (RGB, RGBD, Physical Sensor)?</li>
+
+        <li>Reasoning: How to formulate reasoning about affordances and physical properties? How to encode, represent and learn common sense?</li>
+
+        <li>Interaction: How to model and learn to interact with objects within the scene?</li>
+
+        <li>Generalist models: How can we develop 3D vision models with multi-task, zero-shot, and few-shot capabilities in holistic scene understanding tasks and related applications?</li>
+
+        <li>Bridging fields: How to facilitate researches that connect vision, graphics, and robotics via 3D scene understanding?</li>
+      </ul> -->
+       </section>
+
+      <br>
+
+
+      <speaker>
+        <h2>Organizers</h2>
+
+        <table>
+          <tbody>
+            <tr>
+              <td style="text-align: center;" width="25%"><a href="https://yixchen.github.io/"><img src="img/yxchen.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td style="text-align: center;" width="25%"><a href="https://buzz-beater.github.io/"><img src="img/Baoxiong.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td style="text-align: center;" width="25%"><a href="https://yfeng95.github.io/"><img src="img/YaoFeng.png" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td style="text-align: center;" width="25%"><a href="https://pengsongyou.github.io/"><img src="img/Songyou.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+            </tr>
+            <tr>
+              <td style="text-align: center;"><a href="https://yixchen.github.io/">Yixin Chen (BIGAI)</a></td>
+              <td style="text-align: center;"><a href="https://buzz-beater.github.io/">Baoxiong Jia (BIGAI)</a></td>
+              <td style="text-align: center;"><a href="https://yfeng95.github.io/">Yao Feng (Stanford)</a></td>
+              <td style="text-align: center;"><a href="https://pengsongyou.github.io/">Songyou Peng (DeepMind)</a></td>
+            </tr>
+            <tr>
+              <td style="text-align: center;" width="25%"><a href="https://zouchuhang.github.io/"><img src="img/zou.png" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td style="text-align: center;" width="25%"><a href="https://saidwivedi.in/"><img src="img/Sai.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td style="text-align: center;" width="25%"><a href="https://www.yzhu.io/"><img src="img/yzhu.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td style="text-align: center;" width="25%"><a href="https://siyuanhuang.com"><img src="img/huang.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+            </tr>
+            <tr>
+              <td style="text-align: center;"><a href="https://zouchuhang.github.io/">Chuhang Zou (Amazon)</a></td>
+              <td style="text-align: center;"><a href="https://saidwivedi.in/">Sai Kumar Dwivedi (MPI)</a></td>
+              <td style="text-align: center;"><a href="https://www.yzhu.io/">Yixin Zhu (PKU)</a></td>
+              <td style="text-align: center;"><a href="https://siyuanhuang.com">Siyuan Huang (BIGAI)</a></td>
+            </tr>
+          </tbody>
+        </table>
+        </speaker>
+
+      <br>
+
+      <speaker>
+        <h2>Senior Organizers</h2>
+
+        <table>
+          <tbody>
+            <tr>
+              <td width="25%" style="text-align: center;"><a href="https://people.inf.ethz.ch/pomarc/"><img src="img/MarcPollefeys.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td width="25%" style="text-align: center;"><a href="http://dhoiem.cs.illinois.edu/"><img src="img/derek.png" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+              <td width="25%" style="text-align: center;"><a href="http://www.stat.ucla.edu/~sczhu/"><img src="img/songchun.jpg" width="120px" align="bottom" style="border-radius: 50%"></a></td>
+            </tr>
+            <tr>
+              <td style="text-align: center;"><a href="https://people.inf.ethz.ch/pomarc/">Marc Pollefeys (ETH Zurich)</a></td>
+              <td style="text-align: center;"><a href="http://dhoiem.cs.illinois.edu/">Derek Hoiem (UIUC)</a></td>
+              <td style="text-align: center;"><a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu<br>(BIGAI, PKU, THU)</a></td>
+            </tr>
+          </tbody>
+        </table>
+        </speaker>
+
+        <br>
+        <br>
+
+      <footer>
+      <hr>
+      <p class="credit">Website design adapted from <a href="https://www.visionmeetscognition.org/index.html">FPIC Workshop</a>.</p>
+      </footer>
+  </body>
+</html>
