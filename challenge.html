@@ -90,19 +90,52 @@
         <br>
         <ul> 
           <li>
-              <b>Situated QA</b>: Featuring <a href="https://sqa3d.github.io">SQA3D</a> benchmark, answer a question given a scene and a sentence that describe the situation of an agent in that scene. You may use the ground truth location in this task. More challenge details: <a href='https://github.com/SilongYong/SQA3D/blob/master/assets/dataset.md'>introduction</a>. For more information on SQA3D, please check out the <a href="http://web.cs.ucla.edu/~xm/file/sqa3d_iclr23_slides.pdf">overview slides</a> and the <a href="https://arxiv.org/abs/2210.07474">technical report</a>.
+              <h4>Situated QA (SQA)</h4>Featuring <a href="https://sqa3d.github.io">SQA3D</a> benchmark, answer a question given a scene and a sentence that describe the situation of an agent in that scene. You may use the ground truth location in this task.
+              <ol>
+                <li>
+                  <b>Overview:</b> Please refer to this <a href="http://web.cs.ucla.edu/~xm/file/sqa3d_iclr23_slides.pdf">slide</a> for an overview and this <a href="https://arxiv.org/abs/2210.07474">technical report</a> for more details.
+                </li>
+                <li>
+                  <b>Challenge Data:</b> The participants are provided with training, validation (questions & answers) and testing set (questions). Follow this <a href='https://github.com/SilongYong/SQA3D/blob/master/assets/dataset.md'>instruction</a> for data organization. A <a href="https://github.com/SilongYong/SQA3D">codebase</a> with baseline models is also available. 
+                </li>
+                <li>
+                  <b>Contact:</b> For any additional questions regarding the SQA challenge, please contact <a href="mailto:baoxiongjia@g.ucla.edu?subject=Question of SQA3D challenge at 3D Scene Understanding Workshop 2025">Baoxiong Jia</a>.
+                </li>
+              </ol>
           </li>
           <div class="row" id="tasks">
             <img src="img/sqa3d.png">
           </div>
           <li>
-              <b>Situated multi-modal QA</b>: Featuring <a href="https://msr3d.github.io/">MSQA</a>, answer the question given interleaved text, image, and point cloud for situation and question. More details: <a href='https://github.com/SilongYong/SQA3D/blob/master/assets/localization.md'>introduction</a>.
+              <h4>Multi-modal Situated QA (MSQA)</h4> Featuring <a href="https://msr3d.github.io/">MSQA</a>, answer the question given interleaved text, image, and point cloud for situation and question. 
+              <ol>
+                <li style="color:red">
+                  <b>Overview:</b> 
+                </li>
+                <li style="color:red">
+                  <b>Challenge Data:</b> 
+                </li>
+                <li style="color:red">
+                  <b>Contact:</b> 
+                </li>
+              </ol>
           </li>
           <div class="row" id="tasks">
             <img src="img/msqa.png">
           </div>
           <li>
-              <b>Hierarchical QA</b>: Featuring <a href="https://tai-wang.github.io/mmscan/">MMScan</a>, answer questions from region to object level, from a single target to inter-target relationships, covering holistic aspects of spatial and attribute understanding.
+              <h4>Hierarchical QA</h4>: Featuring <a href="https://tai-wang.github.io/mmscan/">MMScan</a>, answer questions from region to object level, from a single target to inter-target relationships, covering holistic aspects of spatial and attribute understanding.
+              <ol>
+                <li style="color:red">
+                  <b>Overview:</b> 
+                </li>
+                <li style="color:red">
+                  <b>Challenge Data:</b> 
+                </li>
+                <li style="color:red">
+                  <b>Contact:</b> 
+                </li>
+              </ol>
           </li>
           <div class="row" id="tasks">
             <img src="img/mmscan.png">
@@ -115,14 +148,20 @@
           <h2> Submission guidelines </h2>
           <ol>
             <li>
-            The deadline of submitting your result is <strong>June 10 2025</strong>. The winner will be announced on <strong>June 11 2025</strong>. The winner of each task will be invited to give a short talk during the workshop.
+              The deadline of submitting your result is <strong>June 10 2025</strong>. The winner will be announced on <strong>June 11 2025</strong>. The winner of each task will be invited to give a short talk during the workshop.
+            </li>
+            <li>
+              This year we will be hosting our evaluation server on <a href="https://evalai.ai">EvalAI</a>, please the follow the instruction for generating the testing files under each challenge track and submit it online.
             </li>
             <li style="color: red;">
+              The evaluation server will be online in <strong>Mid March 2025</strong>, stay tuned!
+            </li>
+            <!-- <li style="color: red;">
             The participants are provided with training, validation and testing sets and an automatic evaluation script. A <a href="https://github.com/SilongYong/SQA3D">codebase</a> with baseline models is also available.
             </li>
             <li style="color: red;">
                 Since the test set is publicly available, <b>please evaluate your model directly on it and send the result to xiaojian.ma@ucla.edu</b>. 
-            </li>
+            </li> -->
             <!-- <li>
               There are three different scene representations offered by SQA3D: 3D scan, egocentric video and bird-eye view picture. Please include the representation you use when submitting your result.
             </li>
@@ -132,8 +171,8 @@
             <li>
                The submitted result will be made public immediately to the  <a href='https://paperswithcode.com/dataset/sqa3d'>online leaderboard</a> hosted by paperwithcode.
             </li> -->
-            <li style="color: red;">
-              If you have more questions, please contact <a href="mailto:xiaojian.ma@ucla.edu?subject=Question of SQA3D challenge at 3D Scene Understanding Workshop 2023">Xiaojian Ma</a>.
+            <li>
+              If you have any questions regarding result submission or the challenge, please contact <a href="mailto:baoxiongjia@g.ucla.edu?subject=Question on CVPR Scene Understanding Challenge 2025">Baoxiong Jia</a>.
             </li>
           </ol>
         </section>
