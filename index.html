@@ -53,6 +53,117 @@
         border-radius: 8px;
       }
     </style>
+
+    <style>
+      /* Schedule Styles */
+      .schedule {
+        max-width: 700px; /* Adjust for your layout */
+        padding-left: 20px;
+        /* margin: 0 auto; */
+        /* padding: 20px; */
+      }
+
+      /* .schedule h2 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+        color: #5151e5; /* Example color */
+      /* } */ 
+
+      .schedule-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border-left: 2px solid #ccc; /* Creates the timeline line */
+        position: relative;
+      }
+
+      .schedule-list li {
+        margin-bottom: 20px;
+        padding-left: 20px;
+        position: relative;
+      }
+
+      .schedule-list li::before {
+        /* Small circular “bullet” in the timeline */
+        content: "";
+        width: 14px;
+        height: 14px;
+        background-color: #5151e5; /* Match your accent color */
+        border-radius: 50%;
+        position: absolute;
+        left: -7px;
+        top: 0px;
+      }
+
+      .time {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333;
+      }
+
+      .talk {
+        display: block;
+        color: #555;
+      }
+    </style>
+
+    <style>
+    /* Container for the overview */
+    .overview {
+      background: #f9f9ff; /* A subtle background color */
+      /* border: 1px solid #e1e1e1; */
+      border-radius: 8px;
+      padding: 20px 30px;
+      margin: 20px 0;
+      max-width: 800px;
+    }
+
+    /* The heading */
+    .overview h2 {
+      margin-top: 0;
+      color: #5151e5; /* Example accent color */
+      font-size: 1.8rem;
+      border-bottom: 2px solid #e1e1e1;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+
+    /* Standard paragraph styling */
+    .overview p {
+      line-height: 1.6;
+      margin-bottom: 1.2em;
+      color: #333;
+    }
+
+    /* Highlight text */
+    .highlight {
+      background-color: #ffe8a4; /* Light highlight color */
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    /* Make certain keywords more distinct */
+    .overview strong {
+      color: #d83b01; 
+      font-weight: 600;
+    }
+
+    /* Example of an extra highlight for key terms */
+    .keyterm {
+      color: #5151e5;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    /* Spacing before the final break */
+    .overview br {
+      margin-top: 15px;
+      display: block;
+      content: "";
+    }
+  </style>
   </head>
 
   <body>
@@ -63,7 +174,7 @@
         </a>
         <br>
         <h2>5th 3D Scene Understanding for Vision, Graphics, and Robotics</h2>
-        <h3 style="text-decoration;">CVPR 2025 Workshop, Nashville TN, 2025 </h3>
+        <h3 style="text-decoration;">CVPR 2025 Workshop, Nashville TN, June 11th Morning, 2025 </h3>
         <!-- <h3 style="text-decoration;">Location: West 220 - 222 </h3> -->
 	      
         <ul>
@@ -90,6 +201,42 @@
         <p><strong>Invited talks and oral presentations will be presented live or by recorded videos in the same Zoom room, all of the talks will have live Q&A session, please refer to the <a href="talks.html">Talks</a> for recorded videos and more details. </strong></p>
         <p><strong>All the events are hosted in the  <a href="https://zoom.us/j/97553513295?pwd=WnBsUWV1RzVDWWFjS2hmQ2VINEJpdz09">Zoom</a>, click the raise hand button if you have questions during the talk. The speaker would either pause to answer your questions or leave them to the Q&A part.</strong></p>
       </section> -->
+    <h2>Overview</h2>
+    <section class="overview">
+
+        <p>
+          The developments in AI technology have spurred calls for 
+          <span class="highlight">next-generation AI</span>, e.g., 
+          Embodied AI and General AI, 
+          which enables systems to physically interact with their environments for  
+          comprehensive tasks in a human-like manner. Towards this goal, researchers from diverse 
+          fields, e.g., computer vision, computer graphics, and robotics, have made separate efforts 
+          and made progress across various topics, including <strong>3D representation</strong> 
+          (e.g., <em>NeRF</em>, <em>Gaussian Splatting</em>), <strong>foundation models</strong> 
+          (e.g., <em>SAM(2)</em>, <em>Stable (Video) Diffusion</em>), <strong>datasets</strong> 
+          (e.g., <em>Objaverse (XL)</em>, <em>Open X-Embodiment</em>), and 
+          <strong>end-to-end vision-language-action (VLA) models</strong> (e.g., <em>RT-X</em>), etc.
+        </p>
+        
+        <p>
+          However, <strong>new fundamental questions arise</strong> about how to sustain a 
+          more comprehensive understanding of the environment, unite these efforts, 
+          and facilitate the future development of next-generation AI. For example, what is the 
+          role of traditional scene parsing/detection/localization in today’s 
+          development? How to leverage scene understanding techniques to improve 
+          the physical interaction? Could pure end-to-end models and scaling large-scale datasets 
+          work, or are intermediate representations, even 
+          symbolic ones more suitable for certain tasks?
+        </p>
+
+        <p>
+          This year’s focus will be 
+          <strong>exploring the fundamental aspects to enhance interaction between agents and 3D scenes</strong> 
+          in the new era of AI, promoting future directions and ideas to emerge within the next 
+          two to five years.
+        </p>
+
+      </section>
 
       <speaker>
         <h2>Invited Speakers</h2>
@@ -124,35 +271,47 @@
         </table>
       </speaker>
 
-      <section>
-        <h2> Schedule (Pacific Time) </h2>
-        <p>
-          TBD
-        </p>
-      </section>
-      <br>
-
-      <h2>Overview</h2>
-
-      <p>The developments in AI technology have spurred calls for next-generation AI, such as Embodied AI and 
-        General AI, which will enable systems to physically interact with their environments under comprehensive 
-        tasks in a human-like manner. Towards this goal, researchers from diverse fields, e.g., computer vision, 
-        computer graphics, and robotics, have made separate efforts and made progress across various topics, 
-        including 3D representation (e.g., NeRF, Gaussian Splatting), foundation models (e.g., SAM(2), Stable 
-        (Video) Diffusion), datasets (e.g., Objaverse (XL), Open X-Embodiment), end-to-end vision-language-action 
-        (VLA) models (e.g., RT-X), etc.</p> 
-        
-      <p>However, <strong>new fundamental questions arise about how to sustain a 
-        substantially more comprehensive understanding of the environment, unite these efforts, and facilitate 
-        the future development of General and Embodied AI</strong>. For example, what is the role of traditional
-        scene parsing/detection/localization in today’s development? How to leverage scene
-        understanding techniques to improve the physical interaction? Could pure end-to-end models and
-        scaling large-scale datasets work, or are intermediate representations, even symbolic ones more suitable
-        for certain tasks?</p>
-
-      <p>This year’s focus will be <strong>exploring the fundamental aspects to enhance interaction
-           between agents and 3D scenes</strong> in the new era of AI, promoting future directions and ideas
-            envisioned to emerge within the next two to five years.</p>
+  <h2>Tentative Schedule</h2>
+<section class="schedule">
+      <ul class="schedule-list">
+        <li>
+          <span class="time">08:45 am - 09:00 am</span>
+          <span class="talk">Opening Remark: <strong>Siyuan Huang (BIGAI)</strong></span>
+        </li>
+        <li>
+          <span class="time">09:00 am - 09:30 am</span>
+          <span class="talk">Invited talk: <strong>Deva Ramanan (CMU)</strong></span>
+        </li>
+        <li>
+          <span class="time">09:30 am - 10:00 am</span>
+          <span class="talk">Invited talk: <strong>Angel X. Chang (SFU)</strong></span>
+        </li>
+        <li>
+          <span class="time">10:00 am - 10:30 am</span>
+          <span class="talk">Invited talk: <strong>Carl Vondrick (Columbia)</strong></span>
+        </li>
+        <li>
+          <span class="time">10:30 am - 11:00 am</span>
+          <span class="talk">Invited Talk: <strong>Chenfanfu Jiang (UCLA)</strong></span>
+        </li>
+        <li>
+          <span class="time">11:00 pm - 11:15 pm</span>
+          <span class="talk"><strong>🔥Challenge🔥 Winner Announcement!</strong></span>
+        </li>
+        <li>
+          <span class="time">11:15 am - 11:45 am</span>
+          <span class="talk">Invited Talk: <strong>Iro Armeni (Stanford)</strong></span>
+        </li>
+        <li>
+          <span class="time">11:45 am - 12:15 pm</span>
+          <span class="talk">Invited talk: <strong>Kiana Ehsani (Vercept)</strong></span>
+        </li>
+        <li>
+          <span class="time">12:15 pm - 12:45 pm</span>
+          <span class="talk">Invited talk: <strong>Guanya Shi (CMU)</strong></span>
+        </li>
+      </ul>
+    </section>
 
       <br>
 
