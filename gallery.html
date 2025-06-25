@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>3D Scene Understanding at CVPR 2025</title>
+
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <script async src="js/scale.fix.js"></script>
+
+    <style id="style-1-cropbar-clipper">
+      /* Copyright 2014 Evernote Corporation. All rights reserved. */
+      .en-markup-crop-options {
+        top: 18px !important;
+        left: 50% !important;
+        margin-left: -100px !important;
+        width: 200px !important;
+        border: 2px rgba(255,255,255,.38) solid !important;
+        border-radius: 4px !important;
+      }
+      .en-markup-crop-options div div:first-of-type {
+        margin-left: 0px !important;
+      }
+    </style>
+
+    <!-- Custom styles: font change, hover effect, gradient background for the CVPR 2025 logo,
+         and floating the logo to the right -->
+    <style>
+      /* Import Google Font */
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+
+      /* Hover effect on images */
+      img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+      }
+
+      /* Gallery grid */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 0px;
+        padding: 0px;
+      }
+      .gallery-item {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      figure.gallery-item {
+        margin: 5px;
+        padding: 5px;
+        }
+
+      /* Apply a gradient background to the CVPR 2025 logo's link and float it to the right */
+      header a[href="http://cvpr.thecvf.com/"] {
+        display: inline-block;
+        float: right;
+        padding: 2px;
+        background: linear-gradient(45deg, #72edf2, #5151e5);
+        border-radius: 8px;
+      }
+    </style>
+
+    <style>
+      /* Schedule Styles */
+      .schedule {
+        max-width: 700px; /* Adjust for your layout */
+        padding-left: 20px;
+        /* margin: 0 auto; */
+        /* padding: 20px; */
+      }
+
+      /* .schedule h2 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+        color: #5151e5; /* Example color */
+      /* } */ 
+
+      .schedule-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border-left: 2px solid #ccc; /* Creates the timeline line */
+        position: relative;
+      }
+
+      .schedule-list li {
+        margin-bottom: 20px;
+        padding-left: 20px;
+        position: relative;
+      }
+
+      .schedule-list li::before {
+        /* Small circular “bullet” in the timeline */
+        content: "";
+        width: 14px;
+        height: 14px;
+        background-color: #5151e5; /* Match your accent color */
+        border-radius: 50%;
+        position: absolute;
+        left: -7px;
+        top: 0px;
+      }
+
+      .time {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333;
+      }
+
+      .talk {
+        display: block;
+        color: #555;
+      }
+    </style>
+
+    <style>
+    /* Container for the overview */
+    .overview {
+      background: #f9f9ff; /* A subtle background color */
+      /* border: 1px solid #e1e1e1; */
+      border-radius: 8px;
+      padding: 20px 30px;
+      margin: 20px 0;
+      max-width: 800px;
+    }
+
+    /* The heading */
+    .overview h2 {
+      margin-top: 0;
+      color: #5151e5; /* Example accent color */
+      font-size: 1.8rem;
+      border-bottom: 2px solid #e1e1e1;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+
+    /* Standard paragraph styling */
+    .overview p {
+      line-height: 1.6;
+      margin-bottom: 1.2em;
+      color: #333;
+    }
+
+    /* Highlight text */
+    .highlight {
+      background-color: #ffe8a4; /* Light highlight color */
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    /* Make certain keywords more distinct */
+    .overview strong {
+      color: #d83b01; 
+      font-weight: 600;
+    }
+
+    /* Example of an extra highlight for key terms */
+    .keyterm {
+      color: #5151e5;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    /* Spacing before the final break */
+    .overview br {
+      margin-top: 15px;
+      display: block;
+      content: "";
+    }
+  </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="http://cvpr.thecvf.com/">
+          <img class="logo" src="img/cvprlogo_2025.png" width="250" height="110" alt="CVPR 2025 Logo">
+        </a>
+        <h2>5th 3D Scene Understanding for Vision, Graphics, and Robotics</h2>
+        <h3>CVPR 2025 Workshop, Nashville TN, June 11 Morning, 2025</h3>
+        <h3>Watch the video recordings from <a href="https://cvpr.thecvf.com/virtual/2025/workshop/32295" style="color:#5151e5; font-weight:700">virtual CVPR</a> or <a href="https://www.youtube.com/watch?v=CvyPWm2eIfM&list=PLa11dEfdpq8E0MJcL6ymIYq1PeRMBnlK-" style="color:#5151e5; font-weight:700">Youtube</a> </h3>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="challenge.html">🔥Challenge🔥</a></li>
+            <li class="active"><a href="gallery.html">📷Gallery📷</a></li>
+          </ul>
+        </nav>
+        <hr>
+      </header>
+
+      <!-- Gallery Section -->
+      <section class="gallery">
+        <figure class="gallery-item">
+          <img src="2025/photos/poster.jpg" style="padding: 25px 0px 0px 0px;" alt="Panel discussion on 3D reconstruction">
+        </figure>
+        <figure class="gallery-item">
+          <img src="2025/photos/a1.jpg" alt="Panel discussion on 3D reconstruction">
+        </figure>
+        <figure class="gallery-item">
+          <img src="2025/photos/a2.jpg" alt="Panel discussion on 3D reconstruction">
+        </figure>
+        <figure class="gallery-item">
+          <img src="2025/photos/a3.jpg" alt="Panel discussion on 3D reconstruction">
+        </figure>
+        <figure class="gallery-item">
+          <img src="2025/photos/s1.jpg" alt="Panel discussion on 3D reconstruction">
+        </figure>
+        <figure class="gallery-item">
+          <img src="2025/photos/s2.jpg" alt="Panel discussion on 3D reconstruction">
+        </figure>
+        <figure class="gallery-item">
+          <img src="2025/photos/s2-1.jpg" alt="Panel discussion on 3D reconstruction">
+        </figure>
+        <figure class="gallery-item">
+          <img src="2025/photos/s3.jpg" alt="Panel discussion on 3D reconstruction">
+        </figure>
+        <figure class="gallery-item">
+          <img src="2025/photos/s3-1.jpg" alt="Panel discussion on 3D reconstruction">
+        </figure>
+        <figure class="gallery-item">
+          <img src="2025/photos/s4-1.jpg" alt="Panel discussion on 3D reconstruction">
+        </figure>
+        <figure class="gallery-item">
+          <img src="2025/photos/s4-2.jpg" alt="Panel discussion on 3D reconstruction">
+        </figure>
+        <figure class="gallery-item">
+          <img src="2025/photos/s5.jpg" alt="Panel discussion on 3D reconstruction">
+        </figure>
+        <figure class="gallery-item">
+          <img src="2025/photos/s5-1.jpg" alt="Panel discussion on 3D reconstruction">
+        </figure>
+        <figure class="gallery-item">
+          <img src="2025/photos/s6.jpg" alt="Panel discussion on 3D reconstruction">
+        </figure>
+        <figure class="gallery-item">
+          <img src="2025/photos/s7.jpg" alt="Panel discussion on 3D reconstruction">
+        </figure>
+      </section>
+    </div>
+  </body>
+</html>
