@@ -1,25 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-
-:root {
-  --denver-sky: #2a5673;
-  --denver-sunrise: #e37a3e;
-  --denver-foothill: #4b825a;
-  --denver-snow: #f3e9dc;
-  --text-primary: #2a2a2a;
-  --text-secondary: #4c4c4c;
-  --accent-muted: #d6c4b5;
-}
-
 body {
   padding:50px;
-  font:16px/1.6 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:var(--text-primary);
-  font-weight:400;
-  background:linear-gradient(180deg, var(--denver-snow) 0%, #ffffff 70%);
-  min-height: 100vh;
+  font:16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#000;
+  font-weight:300;
 }
 h1, h2, h3, h4, h5, h6 {
-  color:var(--denver-sky);
+  color:#222;
   margin:0 0 20px;
 }
 p, ul, ol, table, pre, dl {
@@ -33,24 +19,24 @@ h1 {
 }
 h2 {
   font-size: 125%;
-  color:var(--denver-sky);
+  color:#393939;
 }
 h3 {
-  font-size: 110%;
-  color:var(--text-secondary);
+  font-size: 105%;
+  color:#494949;
 }
 h4, h5, h6 {
   font-size: 100%;
   font-style: italic;
-  color:var(--text-secondary);
+  color:#494949;
 }
 a {
-  color:var(--denver-sunrise);
-  font-weight:500;
+  color:#39c;
+  font-weight:400;
   text-decoration:none;
 }
 a:hover {
-  color:#bb5c24;
+  color:#069;
 }
 a small {
   font-size:11px;
@@ -101,11 +87,6 @@ th {
 }
 img {
   max-width:100%;
-  transition: transform 0.3s ease;
-}
-
-img:hover {
-  transform: scale(1.05);
 }
 header {
   margin: 0;
@@ -125,30 +106,23 @@ header li + li{
   text-align: center;
 }
 header ul a {
-  color: var(--text-secondary);
+  color: #555;
 }
 header ul li.active a {
   font-weight: 700;
-  color: var(--denver-sky);
 }
 header ul a:hover {
-  color: var(--denver-sunrise);
+  color: #000;
   font-weight: 700;
-}
-.logo-link {
-  float: right;
-  padding: 2px;
-  background: linear-gradient(135deg, var(--denver-sky), var(--denver-sunrise));
-  border-radius: 8px;
 }
 .logo {
   float: right;
 }
 speaker a {
-  color: var(--text-secondary);
+  color: #555;
 }
 speaker a:hover {
-  color: var(--denver-sunrise);
+  color: #000;
   font-weight: 700;
 }
 section {
@@ -164,7 +138,7 @@ footer .logo {
   margin-left: 10px;
 }
 strong {
-  color: var(--denver-sky);
+  color: #222;
   font-weight:700;
 }
 small {
@@ -172,16 +146,16 @@ small {
 }
 hr {
   border:0;
-  background:var(--accent-muted);
+  background:#e5e5e5;
   height:1px;
   margin:0 0 20px;
 }
 footer {
-  color: #8f8f8f;
+  color: #aaa;
   font-size:80%;
 }
 footer a, footer a:hover {
-  color: #8f8f8f;
+  color: #aaa;
   text-decoration: underline;
 }
 strong a {
@@ -192,11 +166,4 @@ center {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-}
-
-.schedule-note {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  font-style: italic;
-  margin-bottom: 15px;
 }

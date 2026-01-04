@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>3D Scene Understanding at CVPR 2025</title>
+
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <script async src="js/scale.fix.js"></script>
+
+    <style id="style-1-cropbar-clipper">
+      /* Copyright 2014 Evernote Corporation. All rights reserved. */
+      .en-markup-crop-options {
+        top: 18px !important;
+        left: 50% !important;
+        margin-left: -100px !important;
+        width: 200px !important;
+        border: 2px rgba(255,255,255,.38) solid !important;
+        border-radius: 4px !important;
+      }
+      .en-markup-crop-options div div:first-of-type {
+        margin-left: 0px !important;
+      }
+    </style>
+
+    <!-- Custom styles: font change, hover effect, gradient background for the CVPR 2025 logo,
+         and floating the logo to the right -->
+    <style>
+      /* Import Google Font */
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+
+      /* Hover effect on images */
+      img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+      }
+
+      /* Apply a gradient background to the CVPR 2025 logo's link and float it to the right */
+      header a[href="http://cvpr.thecvf.com/"] {
+        display: inline-block;
+        float: right;
+        padding: 2px;
+        background: linear-gradient(45deg, #72edf2, #5151e5);
+        border-radius: 8px;
+      }
+      h4 {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="http://cvpr.thecvf.com/">
+          <img class="logo" src="../img/cvprlogo_2025.png" width="250px" height="110px" align="bottom">
+        </a>
+        <br>
+        <h2>5th 3D Scene Understanding for Vision, Graphics, and Robotics</h2>
+        <h3 style="text-decoration;">CVPR 2025 Workshop, Nashville TN, June 11th Morning, 2025 </h3>
+        <!-- <h3 style="text-decoration;">Location: West 220 - 222 </h3> -->
+      <ul>
+        <li>
+          <a href="index.html" title="">Introduction</a>
+        </li>
+        <!-- <li>
+          <a href="talks.html" title="">Talks</a>
+        </li> -->
+        <li class="active">
+          <a href="challenge.html" title="">🔥Challenge🔥</a>
+        </li>
+        <li>
+          <a href="past.html" title="">Past workshops</a>
+        </li>
+      </ul>
+          <hr>
+          </header>
+
+
+      <section>
+        <h2> Challenge </h2>
+        This year we establish three challenges on <b>multi-modal understanding and reasoning in 3D scenes</b>:
+        <!-- <br> -->
+        <br>
+        <ul>
+          <li>
+              <h4>Track1: Situated QA (SQA)</h4>Featuring <a href="https://sqa3d.github.io">SQA3D</a> benchmark, answer a question given a scene and a sentence that describe the situation of an agent in that scene. You may use the ground truth location in this task.
+              <ol>
+                <li>
+                  <b>Overview:</b> Please refer to this <a href="http://web.cs.ucla.edu/~xm/file/sqa3d_iclr23_slides.pdf">slide</a> for an overview and this <a href="https://arxiv.org/abs/2210.07474">technical report</a> for more details.
+                </li>
+                <li>
+                  <b>Challenge Data:</b> The participants are provided with training, validation (questions & answers) and testing set (questions). Follow this <a href='https://github.com/SilongYong/SQA3D/blob/master/assets/dataset.md'>instruction</a> for data organization. A <a href="https://github.com/SilongYong/SQA3D">codebase</a> with baseline models is also available.
+                </li>
+                <li>
+                  <b>Contact:</b> For any additional questions regarding the SQA challenge, please contact <a href="mailto:baoxiongjia@g.ucla.edu?subject=Question of SQA3D challenge at 3D Scene Understanding Workshop 2025">Baoxiong Jia</a>.
+                </li>
+              </ol>
+          </li>
+          <div class="row" id="tasks">
+            <img src="../img/sqa3d.png">
+          </div>
+          <br>
+          <li>
+              <h4>Track2: Multi-modal Situated QA (MSQA)</h4> Featuring <a href="https://msr3d.github.io/">MSQA</a> benchmark, answer the question given interleaved text, image, and point cloud for situation and question. The benchmark is designed to evaluate the model's ability to understand the fine-graned attribute of the objects, spatial relations, and the situation awareness in the 3D scene.
+              <ol>
+                <li>
+                  <b>Overview:</b> You can refer to the <a href="https://msr3d.github.io/">website</a> and the paper <a href="https://arxiv.org/abs/2409.02389">paper</a> for more details.
+                </li>
+                <li>
+                  <b>Challenge Data:</b> The participants are provided with training, validation (questions, situations, answers) and testing set (questions, situations). A <a href="https://github.com/MSR3D/MSR3D">codebase</a> with baseline models for MSQA is available.
+                </li>
+                <li>
+                  <b>Contact:</b> For any additional questions regarding the MSQA challenge, please contact <a href="mailto:linghuxiongkun@gmail.com?subject=Question of MSQA challenge at 3D Scene Understanding Workshop 2025">Xiongkun Linghu</a>.
+                </li>
+              </ol>
+          </li>
+          <div class="row" id="tasks">
+            <img src="../img/msqa.png">
+          </div>
+          <br>
+          <li>
+              <h4>Track3: Hierarchical Visual Grounding (HVG)</h4> Hierarchical Visual Grounding Task in <a href="https://tai-wang.github.io/mmscan/">MMScan</a> benchmark: From region to object level, from a single target to inter-target relationships, locate the target object in a scene based on a given description, covering holistic aspects of spatial and attribute understanding.
+              <ol>
+                <li>
+                  <b>Overview:</b> You can refer to this <a href="https://neurips.cc/virtual/2024/poster/97429">website</a> for an overview and our <a href="https://arxiv.org/abs/2406.09401">paper</a> for more details.
+                </li>
+                <li>
+                  <b>Challenge Data:</b> Challenge Data: The participants are provided with training, validation (language prompts & ground-truth boxes) and testing set (language prompts). Follow the <a href="https://github.com/OpenRobotLab/EmbodiedScan/tree/mmscan">instructions</a> to get familiar with data organization and MMScan APIs. All the code for MMScan is available <a href="https://github.com/OpenRobotLab/EmbodiedScan/tree/mmscan">here</a>.
+                </li>
+                <li>
+                  <b>Contact:</b> For any additional questions regarding the HVG challenge, please contact <a href="mailto:rbler1234@sjtu.edu.cn">Jingli Lin</a>.
+                </li>
+              </ol>
+          </li>
+          <div class="row" id="tasks">
+            <img src="../img/mmscan.png">
+          </div>
+        </ul>
+
+        </section>
+        <br>
+        <section>
+          <h2> Submission guidelines </h2>
+          <ol>
+            <li>
+              The deadline of submitting your result is <strong>June 10 2025</strong>. The winner will be announced on <strong>June 11 2025</strong>. The winner of each task will be invited to give a short talk during the workshop.
+            </li>
+            <li>
+              This year we will be hosting our evaluation server on <a href="https://evalai.ai">EvalAI</a>, please follow the instruction for generating the testing result files (.json) under each challenge track and submit it online.
+            </li>
+            <li>
+              The evaluation server for SQA and MSQA is available <a href="https://eval.ai/web/challenges/challenge-page/2519/overview">here</a>, and please contact <a href="mailto:rbler1234@sjtu.edu.cn">Jingli Lin</a> for the MMScan evaluation!
+            </li>
+            <!-- <li style="color: red;">
+            The participants are provided with training, validation and testing sets and an automatic evaluation script. A <a href="https://github.com/SilongYong/SQA3D">codebase</a> with baseline models is also available.
+            </li>
+            <li style="color: red;">
+                Since the test set is publicly available, <b>please evaluate your model directly on it and send the result to xiaojian.ma@ucla.edu</b>.
+            </li> -->
+            <!-- <li>
+              There are three different scene representations offered by SQA3D: 3D scan, egocentric video and bird-eye view picture. Please include the representation you use when submitting your result.
+            </li>
+            <li>
+              Using the ground truth location annotations is allowed in the <b>situated reasoning</b> task, but please add a note of using them when submitting your result.
+            </li>
+            <li>
+               The submitted result will be made public immediately to the  <a href='https://paperswithcode.com/dataset/sqa3d'>online leaderboard</a> hosted by paperwithcode.
+            </li> -->
+            <li>
+              If you have any questions regarding result submission or the challenge, please contact <a href="mailto:baoxiongjia@g.ucla.edu?subject=Question on CVPR Scene Understanding Challenge 2025">Baoxiong Jia</a>.
+            </li>
+          </ol>
+        </section>
+        </div>
+      </body>
+    </html>
